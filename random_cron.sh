@@ -11,7 +11,7 @@ elif [[ $(date '+%H') == 04 ]];then
 elif [[ $(date '+%H') == 06 ]];then
     time=$(($RANDOM%10))" 8 * * *"
 elif [[ $(date '+%H') == 08 ]];then
-    time=$(($RANDOM%10))" 10 * * *"
+    time=$(($RANDOM%10))" 12 * * *"
 elif [[ $(date '+%H') == 10 ]];then
     time=$(($RANDOM%10))" 13 * * *"
 elif [[ $(date '+%H') == 13 ]];then
