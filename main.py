@@ -44,9 +44,9 @@ time_list = [8, 10, 12, 14, 16, 20, 21]
 set_push = [False, False, False, False, False, True, False]
 
 # 最小步数（如果只需要刷步的次数少于7次就将该次数以后的步数全都改成0，如：time_list[3]: 0，表示第五次开始不运行或者直接云函数触发里面不在该时间调用均可（建议用后者））
-min_dict = {time_list[0]: 400, time_list[1]: 2000, time_list[2]: 5000, time_list[3]: 7000, time_list[4]: 10000, time_list[5]: 18000, time_list[6]: 0}
+min_dict = {time_list[0]: 400, time_list[1]: 2000, time_list[2]: 5000, time_list[3]: 7000, time_list[4]: 10000, time_list[5]: 13000, time_list[6]: 17000}
 # 最大步数（例如现在设置意思是在8点（你设置的第一个时间点默认8）运行会在1500到2999中随机生成一个数提交（开启气候降低步数会乘系数K）10点3000~4999。。。以此类推，步数范围建议看懂了再改，没看懂直接默认就好）
-max_dict = {time_list[0]: 1999, time_list[1]: 4999, time_list[2]: 6999, time_list[3]: 9999, time_list[4]: 12999, time_list[5]: 24999, time_list[6]: 0}
+max_dict = {time_list[0]: 1999, time_list[1]: 4999, time_list[2]: 6999, time_list[3]: 9999, time_list[4]: 12999, time_list[5]: 16999, time_list[6]: 24999}
 # 设置结束
 now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 headers = {'User-Agent': 'MiFit/5.3.0 (iPhone; iOS 14.7.1; Scale/3.00)'}
